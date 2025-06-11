@@ -12,7 +12,9 @@
 #SBATCH --output=./slurm_files/slurm-%x-%j.out     # where to write output, %x give job name, %j names job id
 #SBATCH --error=./slurm_files/slurm-%x-%j.err      # where to write slurm error
 
-source activate dnlp # Or whatever you called your environment.
+source ~/.bashrc
+micromamba init
+micromamba activate dnlp # Or whatever you called your environment.
 
 # Printing out some info.
 echo "Submitting job with sbatch from directory: ${SLURM_SUBMIT_DIR}"
