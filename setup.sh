@@ -15,5 +15,5 @@ else
 fi
 
 # Install additional packages
-conda install "numpy<2" tqdm==4.66.2 requests==2.31.0 transformers==4.38.2 tensorboard==2.16.2 tokenizers==0.15.1 -c conda-forge -c huggingface
+conda install "numpy<2" "mkl<2025" tqdm==4.66.2 requests==2.31.0 transformers==4.38.2 tensorboard==2.16.2 tokenizers==0.15.1 -c conda-forge -c huggingface
 pip install explainaboard-client==0.1.4 sacrebleu==2.4.0 scikit_learn==1.6.1
