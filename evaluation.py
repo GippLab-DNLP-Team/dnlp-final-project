@@ -171,7 +171,7 @@ def model_eval_multitask(
                 int
             )
             etpc_accuracy = np.mean(correct_pred)
-            etpc_y_pred = etpc_y_pred.tolist()
+            etpc_y_pred = np.array(etpc_y_pred).tolist()
         else:
             etpc_accuracy = None
 
